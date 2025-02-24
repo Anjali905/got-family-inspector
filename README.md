@@ -12,10 +12,11 @@ cd got-family-inspector
 Run the following command to install all required Node.js dependencies:
 
 npm install
+
 4️⃣ Start the Development Server
 Since the project is built with Vite, start the local server with:
-
 npm run dev
+
 The application will be available at:
 
 http://localhost:5173/
