@@ -1,0 +1,193 @@
+.detailContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.characterInfo {
+    display: flex;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   
+    flex-wrap: wrap;
+}
+
+.characterImage {
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.characterImage:hover {
+    transform: scale(1.05);
+}
+
+.textDetails {
+    color: white;
+    text-align: left;
+    max-width: 500px;
+}
+
+.textDetails h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.textDetails p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* House Members Section */
+.houseMembersContainer {
+    width: 100%;
+    max-width: 900px;
+    text-align: start;
+    padding-top: 20px;
+}
+
+.houseMembersContainer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Horizontal Scroll for House Members */
+.horizontalScroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 15px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.horizontalScroll::-webkit-scrollbar {
+    height: 5px;
+}
+
+.horizontalScroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.houseMemberCard {
+    cursor: pointer;
+    min-width: 120px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.houseMemberCard:hover {
+    transform: scale(1.1);
+}
+
+.houseMemberImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .characterInfo {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .characterImage {
+        width: 220px;
+        height: 280px;
+    }
+
+    .textDetails {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .textDetails h1 {
+        font-size: 1.8rem;
+    }
+
+    .textDetails p {
+        font-size: 0.9rem;
+    }
+
+    .houseMembersContainer {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .characterImage {
+        width: 180px;
+        height: 240px;
+    }
+
+    .textDetails h1 {
+        font-size: 1.5rem;
+    }
+
+    .textDetails p {
+        font-size: 0.8rem;
+    }
+
+    .houseMemberCard {
+        min-width: 100px;
+    }
+
+    .houseMemberImage {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .characterImage {
+        width: 150px;
+        height: 200px;
+    }
+
+    .textDetails h1 {
+        font-size: 1.3rem;
+    }
+
+    .textDetails p {
+        font-size: 0.75rem;
+    }
+
+    .houseMemberCard {
+        min-width: 90px;
+    }
+
+    .houseMemberImage {
+        width: 70px;
+        height: 70px;
+    }
+}
+.backButton {
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  
