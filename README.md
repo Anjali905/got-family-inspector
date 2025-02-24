@@ -1,8 +1,8 @@
 # React + Vite
 
--Click on the Google Drive link provided.
+
 -Download & Extract the Zip File
--Download the ZIP file and extract it to a local folder.
+
 2️⃣ Navigate to the Project Directory
 Open a terminal or command prompt.
 Use cd to move into the extracted project folder:
